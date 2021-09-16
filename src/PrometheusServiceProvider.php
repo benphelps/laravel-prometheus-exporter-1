@@ -100,6 +100,6 @@ class PrometheusServiceProvider extends ServiceProvider
 
     private function configPath($path) : string
     {
-        return $this->app->basePath() . ($path ? DIRECTORY_SEPARATOR . $path : '');
+        return $this->app->configPath($path);
     }
 }
